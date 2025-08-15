@@ -13,6 +13,7 @@ Welcome to the **Quant Guild Library** — a curated collection of Jupyter Noteb
 ### 📅 2025 Video Lectures (Newest First)
 
 **Latest:**
+- **38.** [Finite Differences Option Pricing for Quant Finance](https://youtu.be/uzbveN8n34U)
 - **37.** [Stochastic Differential Equations for Quant Finance](https://youtu.be/qDAeSC40ZJE)
 
 **Previous:**
