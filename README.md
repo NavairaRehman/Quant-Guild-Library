@@ -13,10 +13,11 @@ Welcome to the **Quant Guild Library** — a curated collection of Jupyter Noteb
 ### 📅 2025 Video Lectures (Newest First)
 
 **Latest:**
-- **38.** [Finite Differences Option Pricing for Quant Finance](https://youtu.be/uzbveN8n34U)
-- **37.** [Stochastic Differential Equations for Quant Finance](https://youtu.be/qDAeSC40ZJE)
+- **39.** [Heston Stochastic Volatility Model and Fast Fourier Transforms](https://youtu.be/2-oAlnZV6hA)
 
 **Previous:**
+- **38.** [Finite Differences Option Pricing for Quant Finance](https://youtu.be/uzbveN8n34U)
+- **37.** [Stochastic Differential Equations for Quant Finance](https://youtu.be/qDAeSC40ZJE)
 - **36.** [How to Trade with the Kelly Criterion](https://youtu.be/7tvW3NvRnPk)
 - **35.** [What Does AI Actually Learn](https://youtu.be/tX7b2KT63WQ)
 - **34.** [How to Trade with an Edge](https://youtu.be/NlqpDB2BhxE)
