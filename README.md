@@ -13,6 +13,7 @@ Welcome to the **Quant Guild Library** — a curated collection of Jupyter Noteb
 ### 📅 2025 Video Lectures (Newest First)
 
 **Latest:**
+- **40.** [Quant Trader on Retail vs. Institutional Trading](https://youtu.be/j1XAcdEHzbU)
 - **39.** [Heston Stochastic Volatility Model and Fast Fourier Transforms](https://youtu.be/2-oAlnZV6hA)
 
 **Previous:**
