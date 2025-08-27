@@ -13,11 +13,12 @@ Welcome to the **Quant Guild Library** — a curated collection of Jupyter Noteb
 ### 📅 2025 Video Lectures (Newest First)
 
 **Latest:**
+- **42.** [Quant on Trading and Investing](https://youtu.be/CKXp_sMwPuY)
 - **41.** [How to Build a Volatility Trading Dashboard in Python with Interactive Brokers](https://youtu.be/19-rFVgJVkg)
-- **40.** [Quant Trader on Retail vs. Institutional Trading](https://youtu.be/j1XAcdEHzbU)
-- **39.** [Heston Stochastic Volatility Model and Fast Fourier Transforms](https://youtu.be/2-oAlnZV6hA)
 
 **Previous:**
+- **40.** [Quant Trader on Retail vs. Institutional Trading](https://youtu.be/j1XAcdEHzbU)
+- **39.** [Heston Stochastic Volatility Model and Fast Fourier Transforms](https://youtu.be/2-oAlnZV6hA)
 - **38.** [Finite Differences Option Pricing for Quant Finance](https://youtu.be/uzbveN8n34U)
 - **37.** [Stochastic Differential Equations for Quant Finance](https://youtu.be/qDAeSC40ZJE)
 - **36.** [How to Trade with the Kelly Criterion](https://youtu.be/7tvW3NvRnPk)
