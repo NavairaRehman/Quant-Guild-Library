@@ -472,7 +472,7 @@ class ImpliedVolatilityDashboard:
                 x_range_low = np.linspace(x_low.min(), x_low.max(), 100)
                 y_pred_low = slope_low * x_range_low + intercept_low
                 self.ax2.plot(x_range_low, y_pred_low, 'r-', linewidth=2,
-                              label=f"Low Vol R^2 = {r_high**2:.3f}")
+                              label=f"Low Vol R^2 = {r_low**2:.3f}")
                 
         self.ax2.axhline(y = 0, color='k', linestyle='--', linewidth=1, alpha=.7, label='No Change (y=0)')
         self.ax2.axvline(x = intersection_x, color='g', linestyle=':', linewidth=1, alpha=.7,
