@@ -13,6 +13,7 @@ Welcome to the **Quant Guild Library** — a curated collection of Jupyter Noteb
 ### 📅 2025 Video Lectures (Newest First)
 
 **Latest:**
+- **44.** [Time Series Analysis for Quant Finance](https://youtu.be/JwqjuUnR8OY)
 - **43.** [How to Trade Implied Volatility Crush](https://youtu.be/jM7Zd6GU86Q)
 
 **Previous:**
