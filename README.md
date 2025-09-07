@@ -13,7 +13,7 @@ Welcome to the **Quant Guild Library** — a curated collection of Jupyter Noteb
 ### 📅 2025 Video Lectures (Newest First)
 
 **Latest:**
-- **45.** [45. How to Code an Options Volatility Crush Trading Tool in Python with Interactive Brokers](https://youtu.be/ZF4Eci5casc)
+- **45.** [How to Code an Options Volatility Crush Trading Tool in Python with Interactive Brokers](https://youtu.be/ZF4Eci5casc)
 
 **Previous:**
 - **44.** [Time Series Analysis for Quant Finance](https://youtu.be/JwqjuUnR8OY)
