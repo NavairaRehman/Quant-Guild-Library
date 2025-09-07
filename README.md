@@ -13,10 +13,11 @@ Welcome to the **Quant Guild Library** — a curated collection of Jupyter Noteb
 ### 📅 2025 Video Lectures (Newest First)
 
 **Latest:**
-- **44.** [Time Series Analysis for Quant Finance](https://youtu.be/JwqjuUnR8OY)
-- **43.** [How to Trade Implied Volatility Crush](https://youtu.be/jM7Zd6GU86Q)
+- **45.** [45. How to Code an Options Volatility Crush Trading Tool in Python with Interactive Brokers](https://youtu.be/ZF4Eci5casc)
 
 **Previous:**
+- **44.** [Time Series Analysis for Quant Finance](https://youtu.be/JwqjuUnR8OY)
+- **43.** [How to Trade Implied Volatility Crush](https://youtu.be/jM7Zd6GU86Q)
 - **42.** [Quant on Trading and Investing](https://youtu.be/CKXp_sMwPuY)
 - **41.** [How to Build a Volatility Trading Dashboard in Python with Interactive Brokers](https://youtu.be/19-rFVgJVkg)
 - **40.** [Quant Trader on Retail vs. Institutional Trading](https://youtu.be/j1XAcdEHzbU)
