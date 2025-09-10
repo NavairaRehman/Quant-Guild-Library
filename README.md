@@ -13,6 +13,7 @@ Welcome to the **Quant Guild Library** — a curated collection of Jupyter Noteb
 ### 📅 2025 Video Lectures (Newest First)
 
 **Latest:**
+- **46.** [Is Trading Luck or Skill? Quant Debunks Trading Gurus with Math](https://youtu.be/czEyUZabE2U)
 - **45.** [How to Build an Options Volatility Trading Tool in Python with Interactive Brokerss](https://youtu.be/ZF4Eci5casc)
 
 **Previous:**
