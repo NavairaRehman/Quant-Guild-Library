@@ -13,10 +13,11 @@ Welcome to the **Quant Guild Library** — a curated collection of Jupyter Noteb
 ### 📅 2025 Video Lectures (Newest First)
 
 **Latest:**
-- **46.** [Is Trading Luck or Skill? Quant Debunks Trading Gurus with Math](https://youtu.be/czEyUZabE2U)
-- **45.** [How to Build an Options Volatility Trading Tool in Python with Interactive Brokerss](https://youtu.be/ZF4Eci5casc)
+- **47** [Master Volatility with ARCH & GARCH Models](https://youtu.be/iImtlBRcczA)
 
 **Previous:**
+- **46.** [Is Trading Luck or Skill? Quant Debunks Trading Gurus with Math](https://youtu.be/czEyUZabE2U)
+- **45.** [How to Build an Options Volatility Trading Tool in Python with Interactive Brokerss](https://youtu.be/ZF4Eci5casc)
 - **44.** [Time Series Analysis for Quant Finance](https://youtu.be/JwqjuUnR8OY)
 - **43.** [How to Trade Implied Volatility Crush](https://youtu.be/jM7Zd6GU86Q)
 - **42.** [Quant on Trading and Investing](https://youtu.be/CKXp_sMwPuY)
