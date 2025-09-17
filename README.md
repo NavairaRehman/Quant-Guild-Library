@@ -4,7 +4,11 @@ Welcome to the **Quant Guild Library** — a curated collection of Jupyter Noteb
 
 [🚀 Master Quantitative Skills with Quant Guild](https://quantguild.com)
 
-[📚 Take Live Classes with Roman on Quant Guild](https://quantguild.com/live-classes)
+[🏷️ Quant Guild Merch](https://quantguild.com/live-classes)
+
+[📈 Interactive Brokers for Algorithmic Trading](https://www.interactivebrokers.com/mkt/?src=quantguildY&url=%2Fen%2Fwhyib%2Foverview.php)
+
+[👾 Join the Quant Guild Discord server here](https://discord.com/invite/MJ4FU2c6c3)
 
 > Each folder contains a Jupyter Notebook and a corresponding lecture video by Roman Paolucci.
 
