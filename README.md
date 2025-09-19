@@ -17,6 +17,7 @@ Welcome to the **Quant Guild Library** — a curated collection of Jupyter Noteb
 ### 📅 2025 Video Lectures (Newest First)
 
 **Latest:**
+- **48.** [Why Trading Metrics are Misleading (Unless This is True)](https://youtu.be/xziwmju7x2s)
 - **47** [Master Volatility with ARCH & GARCH Models](https://youtu.be/iImtlBRcczA)
 
 **Previous:**
