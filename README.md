@@ -17,10 +17,11 @@ Welcome to the **Quant Guild Library** — a curated collection of Jupyter Noteb
 ### 📅 2025 Video Lectures (Newest First)
 
 **Latest:**
-- **48.** [Why Trading Metrics are Misleading (Unless This is True)](https://youtu.be/xziwmju7x2s)
-- **47** [Master Volatility with ARCH & GARCH Models](https://youtu.be/iImtlBRcczA)
+- **49.** [Markov Chains for Quant Finance](https://youtu.be/k8oQfd6M5sA)
 
 **Previous:**
+- **48.** [Why Trading Metrics are Misleading (Unless This is True)](https://youtu.be/xziwmju7x2s)
+- **47** [Master Volatility with ARCH & GARCH Models](https://youtu.be/iImtlBRcczA)
 - **46.** [Is Trading Luck or Skill? Quant Debunks Trading Gurus with Math](https://youtu.be/czEyUZabE2U)
 - **45.** [How to Build an Options Volatility Trading Tool in Python with Interactive Brokerss](https://youtu.be/ZF4Eci5casc)
 - **44.** [Time Series Analysis for Quant Finance](https://youtu.be/JwqjuUnR8OY)
