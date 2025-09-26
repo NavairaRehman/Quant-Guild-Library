@@ -17,6 +17,7 @@ Welcome to the **Quant Guild Library** — a curated collection of Jupyter Noteb
 ### 📅 2025 Video Lectures (Newest First)
 
 **Latest:**
+- **50.** [Why Poker Pros Make the Best Traders (It's NOT Luck)](https://youtu.be/JuD3KGQhofw)
 - **49.** [Markov Chains for Quant Finance](https://youtu.be/k8oQfd6M5sA)
 
 **Previous:**
