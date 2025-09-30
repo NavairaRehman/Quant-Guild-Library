@@ -17,10 +17,11 @@ Welcome to the **Quant Guild Library** — a curated collection of Jupyter Noteb
 ### 📅 2025 Video Lectures (Newest First)
 
 **Latest:**
-- **50.** [Why Poker Pros Make the Best Traders (It's NOT Luck)](https://youtu.be/JuD3KGQhofw)
-- **49.** [Markov Chains for Quant Finance](https://youtu.be/k8oQfd6M5sA)
+- **51.** [Hidden Markov Models for Quant Finance](https://youtu.be/Bru4Mkr601Q)
 
 **Previous:**
+- **50.** [Why Poker Pros Make the Best Traders (It's NOT Luck)](https://youtu.be/JuD3KGQhofw)
+- **49.** [Markov Chains for Quant Finance](https://youtu.be/k8oQfd6M5sA)
 - **48.** [Why Trading Metrics are Misleading (Unless This is True)](https://youtu.be/xziwmju7x2s)
 - **47** [Master Volatility with ARCH & GARCH Models](https://youtu.be/iImtlBRcczA)
 - **46.** [Is Trading Luck or Skill? Quant Debunks Trading Gurus with Math](https://youtu.be/czEyUZabE2U)
