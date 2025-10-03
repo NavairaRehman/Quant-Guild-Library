@@ -17,6 +17,7 @@ Welcome to the **Quant Guild Library** — a curated collection of Jupyter Noteb
 ### 📅 2025 Video Lectures (Newest First)
 
 **Latest:**
+- **52.** [Quant Proves Trading Can't Be Taught (But You CAN Learn This)](https://youtu.be/uivlsPk0WLQ)
 - **51.** [Hidden Markov Models for Quant Finance](https://youtu.be/Bru4Mkr601Q)
 
 **Previous:**
