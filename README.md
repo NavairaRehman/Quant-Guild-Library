@@ -17,10 +17,11 @@ Welcome to the **Quant Guild Library** — a curated collection of Jupyter Noteb
 ### 📅 2025 Video Lectures (Newest First)
 
 **Latest:**
-- **52.** [Quant Proves Trading Can't Be Taught (But You CAN Learn This)](https://youtu.be/uivlsPk0WLQ)
-- **51.** [Hidden Markov Models for Quant Finance](https://youtu.be/Bru4Mkr601Q)
+- **53.** [Emojis Predict Future Stock Returns!? 📈😳](https://youtu.be/x3h919TPPqI)
 
 **Previous:**
+- **52.** [Quant Proves Trading Can't Be Taught (But You CAN Learn This)](https://youtu.be/uivlsPk0WLQ)
+- **51.** [Hidden Markov Models for Quant Finance](https://youtu.be/Bru4Mkr601Q)
 - **50.** [Why Poker Pros Make the Best Traders (It's NOT Luck)](https://youtu.be/JuD3KGQhofw)
 - **49.** [Markov Chains for Quant Finance](https://youtu.be/k8oQfd6M5sA)
 - **48.** [Why Trading Metrics are Misleading (Unless This is True)](https://youtu.be/xziwmju7x2s)
