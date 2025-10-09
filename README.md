@@ -17,7 +17,8 @@ Welcome to the **Quant Guild Library** — a curated collection of Jupyter Noteb
 ### 📅 2025 Video Lectures (Newest First)
 
 **Latest:**
-- **53.** [Emojis Predict Future Stock Returns!? 📈😳](https://youtu.be/x3h919TPPqI)
+- **54.** [Quant vs. Discretionary Trading]()
+- **53.** [Do Emojis Predict Stock Returns? | Quant Guild at UCSD's Triton Quantitative Trading](https://youtu.be/x3h919TPPqI)
 
 **Previous:**
 - **52.** [Quant Proves Trading Can't Be Taught (But You CAN Learn This)](https://youtu.be/uivlsPk0WLQ)
