@@ -15,7 +15,7 @@ Welcome to the **Quant Guild Library** — a curated collection of Jupyter Noteb
 ### 📅 2025 Video Lectures (Newest First)
 
 **Latest:**
-- **54.** [Quant vs. Discretionary Trading]()
+- **54.** [Quant vs. Discretionary Trading](https://youtu.be/3gblERSSHXI)
 - **53.** [Do Emojis Predict Stock Returns? | Quant Guild at UCSD's Triton Quantitative Trading](https://youtu.be/x3h919TPPqI)
 
 **Previous:**
