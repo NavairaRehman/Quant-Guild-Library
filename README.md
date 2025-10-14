@@ -15,10 +15,11 @@ Welcome to the **Quant Guild Library** — a curated collection of Jupyter Noteb
 ### 📅 2025 Video Lectures (Newest First)
 
 **Latest:**
-- **54.** [Quant vs. Discretionary Trading](https://youtu.be/3gblERSSHXI)
-- **53.** [Do Emojis Predict Stock Returns? | Quant Guild at UCSD's Triton Quantitative Trading](https://youtu.be/x3h919TPPqI)
+- **55.** [How to Build an Earnings Event Trading Dashboard in Python (Interactive Brokers API)](https://youtu.be/Xtth2F1xm5Q)
 
 **Previous:**
+- **54.** [Quant vs. Discretionary Trading](https://youtu.be/3gblERSSHXI)
+- **53.** [Do Emojis Predict Stock Returns? | Quant Guild at UCSD's Triton Quantitative Trading](https://youtu.be/x3h919TPPqI)
 - **52.** [Quant Proves Trading Can't Be Taught (But You CAN Learn This)](https://youtu.be/uivlsPk0WLQ)
 - **51.** [Hidden Markov Models for Quant Finance](https://youtu.be/Bru4Mkr601Q)
 - **50.** [Why Poker Pros Make the Best Traders (It's NOT Luck)](https://youtu.be/JuD3KGQhofw)
