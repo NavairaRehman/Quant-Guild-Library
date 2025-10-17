@@ -15,6 +15,7 @@ Welcome to the **Quant Guild Library** — a curated collection of Jupyter Noteb
 ### 📅 2025 Video Lectures (Newest First)
 
 **Latest:**
+- **56.** [Quant Busts 3 Trading Myths with Math](https://youtu.be/wJfIk3VnubE)
 - **55.** [How to Build an Earnings Event Trading Dashboard in Python (Interactive Brokers API)](https://youtu.be/Xtth2F1xm5Q)
 
 **Previous:**
