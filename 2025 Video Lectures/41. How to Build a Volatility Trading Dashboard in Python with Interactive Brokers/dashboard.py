@@ -163,9 +163,14 @@ class ImpliedVolatilityDashboard:
         plot_frame.columnconfigure(0, weight=1)
         plot_frame.rowconfigure(0, weight=1)
 
-        self.fig, (self.ax1, self.ax2, self.ax3) = plt.subplots(1, 3, figsize=(18, 6))
+        # Use horizontal layout for subplots to prevent title/label overlap
+        self.fig, (self.ax1, self.ax2, self.ax3) = plt.subplots(1, 3, figsize=(15, 5), constrained_layout=False)
+        self.fig.set_dpi(100)
         self.canvas = FigureCanvasTkAgg(self.fig, plot_frame)
-        self.canvas.get_tk_widget().grid(row=0, column=0, sticky=(tk.W, tk.E, tk.N, tk.S))
+        canvas_widget = self.canvas.get_tk_widget()
+        canvas_widget.grid(row=0, column=0, sticky=(tk.W, tk.E, tk.N, tk.S))
+        # Adjust spacing to prevent overlapping
+        self.fig.subplots_adjust(left=0.08, right=0.92, top=0.88, bottom=0.2, wspace=0.35)
 
     def log_message(self, message):
         timestamp = datetime.now().strftime('%H:%M:%S')
@@ -430,82 +435,64 @@ class ImpliedVolatilityDashboard:
         else:
             slope_low = intercept_low = r_low = p_low = std_error_low = None
 
-        self.ax1.clear()
-        self.ax2.clear()
-        self.ax3.clear()
+        from matplotlib.dates import AutoDateLocator, DateFormatter
 
-        self.ax1.scatter(analysis_df['current_vol'], analysis_df['forward_30d_vol'], alpha=.6, s=20)
+        # Clear axes
+        for ax in [self.ax1, self.ax2, self.ax3]:
+            ax.clear()
 
+        # --- Ax1: Forward vs Current IV ---
+        self.ax1.scatter(analysis_df['current_vol'], analysis_df['forward_30d_vol'], alpha=0.5, s=15)
         x_range = np.linspace(analysis_df['current_vol'].min(), analysis_df['current_vol'].max(), 100)
         y_pred1 = slope1 * x_range + intercept1
+        self.ax1.plot(x_range, y_pred1, 'r-', linewidth=1.5, label=f"Regression R²={r_value1**.2:.3f}")
+        self.ax1.plot([analysis_df['current_vol'].min(), analysis_df['current_vol'].max()],
+                      [analysis_df['current_vol'].min(), analysis_df['current_vol'].max()],
+                      'k--', linewidth=1, alpha=0.7, label='y=x')
+        self.ax1.set_xlabel("Current Implied Volatility", fontsize=9, labelpad=6)
+        self.ax1.set_ylabel("30-Day Forward Avg iVOL", fontsize=9, labelpad=6)
+        self.ax1.set_title("Forward iVOL vs Current iVOL", fontsize=10)
+        self.ax1.tick_params(axis='both', labelsize=7)
+        self.ax1.legend(fontsize=7, bbox_to_anchor=(1.02, 1), loc='upper left')
+        self.ax1.grid(True, linestyle='--', linewidth=0.5, alpha=0.15)
 
-        self.ax1.plot(x_range, y_pred1, 'r-', linewidth=2, label=f"Regression R^2 = {r_value1**2:.3f}")
+        # --- Ax2: Vol Difference by Regime ---
+        self.ax2.scatter(analysis_df.loc[high_vol_regime,'current_vol'],
+                         analysis_df.loc[high_vol_regime,'vol_diff'],
+                         alpha=0.5, s=15, color='red', label='High Vol')
+        self.ax2.scatter(analysis_df.loc[low_vol_regime,'current_vol'],
+                         analysis_df.loc[low_vol_regime,'vol_diff'],
+                         alpha=0.5, s=15, color='blue', label='Low Vol')
+        self.ax2.axhline(0, color='k', linestyle='--', linewidth=1, alpha=0.7)
+        self.ax2.axvline(intersection_x, color='g', linestyle=':', linewidth=1, alpha=0.7,
+                         label=f"Regime Split")
+        self.ax2.set_xlabel("Current Implied Volatility", fontsize=9, labelpad=6)
+        self.ax2.set_ylabel("Vol Difference", fontsize=9, labelpad=6)
+        self.ax2.set_title("Vol Difference vs Current Vol", fontsize=10)
+        self.ax2.tick_params(axis='both', labelsize=7)
+        self.ax2.legend(fontsize=7, bbox_to_anchor=(1.02, 1), loc='upper left')
+        self.ax2.grid(True, linestyle='--', linewidth=0.5, alpha=0.15)
 
-        min_val = min(analysis_df['current_vol'].min(), analysis_df['forward_30d_vol'].min())
-        max_val = max(analysis_df['current_vol'].max(), analysis_df['forward_30d_vol'].max())
-        self.ax1.plot([min_val, max_val], [min_val, max_val], 'k--', linewidth=1, alpha=.7, label='y=x (No Change)')
-
-        self.ax1.set_xlabel("Current Implied Volatility")
-        self.ax1.set_ylabel("30-Day Forward Average iVOL")
-        self.ax1.set_title(f"Forward iVOL vs Current iVOL \n y = {slope1:.3f}x + {intercept1:.3f}, R^2 = {r_value1**2:.3f}")
-        self.ax1.legend()
-        self.ax1.grid(True, alpha=.3)
-
-        self.ax2.scatter(analysis_df.loc[high_vol_regime, 'current_vol'], 
-                         analysis_df.loc[high_vol_regime, 'vol_diff'],
-                         alpha=.6, s=20, color='red', label='High Vol Regime')
-        self.ax2.scatter(analysis_df.loc[low_vol_regime, 'current_vol'], 
-                         analysis_df.loc[low_vol_regime, 'vol_diff'],
-                         alpha=.6, s=20, color='blue', label='Low Vol Regime')
-        
-        if slope_high is not None:
-            x_high = analysis_df.loc[high_vol_regime, 'current_vol']
-            if len(x_high) > 0:
-                x_range_high = np.linspace(x_high.min(), x_high.max(), 100)
-                y_pred_high = slope_high * x_range_high + intercept_high
-                self.ax2.plot(x_range_high, y_pred_high, 'r-', linewidth=2,
-                              label=f"High Vol R^2 = {r_high**2:.3f}")
-                
-        if slope_low is not None:
-            x_low = analysis_df.loc[low_vol_regime, 'current_vol']
-            if len(x_high) > 0:
-                x_range_low = np.linspace(x_low.min(), x_low.max(), 100)
-                y_pred_low = slope_low * x_range_low + intercept_low
-                self.ax2.plot(x_range_low, y_pred_low, 'r-', linewidth=2,
-                              label=f"Low Vol R^2 = {r_low**2:.3f}")
-                
-        self.ax2.axhline(y = 0, color='k', linestyle='--', linewidth=1, alpha=.7, label='No Change (y=0)')
-        self.ax2.axvline(x = intersection_x, color='g', linestyle=':', linewidth=1, alpha=.7,
-                         label=f"Regime Split (Vol={intersection_x:.3f})")
-        
-        self.ax2.set_xlabel("Current Implied Volatility")
-        self.ax2.set_ylabel("Vol Difference (Forward - Current)")
-        self.ax2.set_title("Vol Difference vs Current Vol (Regime Analysis)")
-        self.ax2.legend()
-        self.ax2.grid(True, alpha=.3)
-
-        self.ax3.plot(self.volatility_data.index, self.volatility_data['implied_vol'],
-                      label="Implied Volatility", linewidth=1)
-        
+        # --- Ax3: Time Series ---
+        self.ax3.plot(self.volatility_data.index, self.volatility_data['implied_vol'], linewidth=1)
         vol_75th = self.volatility_data['implied_vol'].quantile(.75)
         vol_25th = self.volatility_data['implied_vol'].quantile(.25)
-
-        self.ax3.axhline(y=vol_75th, color='red', linestyle='--', alpha=.7, label='75th Percentile')
-        self.ax3.axhline(y=vol_25th, color='green', linestyle='--', alpha=.7, label='25th Percentile')
-        self.ax3.axhline(y=self.volatility_data['implied_vol'].mean(), color='black', linestyle='--', alpha=.7, label='Mean')
-    
+        self.ax3.axhline(vol_75th, color='red', linestyle='--', alpha=0.7, label='75th pct')
+        self.ax3.axhline(vol_25th, color='green', linestyle='--', alpha=0.7, label='25th pct')
+        self.ax3.axhline(self.volatility_data['implied_vol'].mean(), color='black', linestyle='--', alpha=0.7, label='Mean')
         if self.current_implied_vol is not None:
-            self.ax3.scatter(self.volatility_data.index[-1], self.current_implied_vol,
-                             color='red', s=100, zorder=5, label='Current iVOL')
-        
-        self.ax3.set_xlabel('Date')
-        self.ax3.set_ylabel('Implied Volatility')
-        self.ax3.set_title("Implied Volatility Time Series with Regime Bands")
-        self.ax3.legend()
-        self.ax3.grid(True, alpha=.3)
-        self.ax3.tick_params(axis='x', rotation=45)
+            self.ax3.scatter(self.volatility_data.index[-1], self.current_implied_vol, color='red', s=80, zorder=5, label='Current iVOL')
+        self.ax3.set_xlabel('Date', fontsize=9, labelpad=6)
+        self.ax3.set_ylabel('Implied Volatility', fontsize=9, labelpad=6)
+        self.ax3.set_title("Implied Volatility Time Series", fontsize=10)
+        self.ax3.tick_params(axis='x', rotation=45, labelsize=7)
+        self.ax3.tick_params(axis='y', labelsize=7)
+        self.ax3.xaxis.set_major_locator(AutoDateLocator())
+        self.ax3.xaxis.set_major_formatter(DateFormatter('%Y-%m-%d'))
+        self.ax3.legend(fontsize=7, bbox_to_anchor=(1.02, 1), loc='upper left')
+        self.ax3.grid(True, linestyle='--', linewidth=0.5, alpha=0.15)
 
-        self.fig.tight_layout()
+        self.fig.subplots_adjust(left=0.08, right=0.92, top=0.88, bottom=0.25, wspace=0.35)
         self.canvas.draw()
 
 
